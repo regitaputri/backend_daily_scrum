@@ -24,7 +24,7 @@ Route::middleware(['jwt.verify'])->group(function(){
     Route::put('/scrum/{id}', 'ScrumController@update');
     Route::delete('/scrum/{id}', 'ScrumController@destroy');
 
-    Route::get('scrum', 'ScrumController@scrum');
+    // Route::get('scrum', 'ScrumController@scrum');
     Route::get('scrumall', 'ScrumController@scrumAuth');
     Route::get('user', 'UserController@getAuthenticatedUser');
 });
